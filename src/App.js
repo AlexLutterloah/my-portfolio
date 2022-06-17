@@ -9,25 +9,37 @@ function App() {
     return (
         <BrowserRouter>
             <div className="body-container">
-                <ResponsiveAppBar style={{ position: "absolute" }} />
+                <ResponsiveAppBar />
 
                 <main className="content-section">
-                    <span id="about"></span>
+                    <span id="about" className="scroll"></span>
 
                     <About></About>
 
-                    <h2 className="content-headers" id="projects">
+                    <h2 className="content-headers scroll" id="projects">
                         PROJECTS
                     </h2>
 
                     <Projects></Projects>
 
-                    <h2 className="content-headers" id="contact">
-                        CONTACT
+                    <h2 className="content-headers scroll" id="contact">
+                        HIT MY LINE
                     </h2>
 
                     <Contact></Contact>
                 </main>
+                <footer style={{ textAlign: "center" }}>
+                    <span
+                        style={{
+                            fontFamily: "monospace",
+                            paddingBottom: "20px",
+                        }}
+                    >
+                        Developed by <span style={{ color: "#18ffff" }}>A</span>
+                        lex <span style={{ color: "#18ffff" }}>L</span>
+                        utterloah.
+                    </span>
+                </footer>
             </div>
         </BrowserRouter>
     );

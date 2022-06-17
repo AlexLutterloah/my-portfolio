@@ -1,0 +1,25 @@
+.project-container {
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 600px;
+}
+
+.projectsH3 {
+    font-family: monospace;
+    color: #18ffff;
+    font-size: 1rem;
+}
+.img-container {
+    display: flex;
+    margin-right: 0;
+}
+.screenshot {
+    height: 500px;
+}
+.project-text {
+    margin-left: auto;
+    width: 50%;
+    height: 300px;
+    padding: 50px;
+    background-color: #242424;
+    border-radius: 20px;
+}

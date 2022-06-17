@@ -1,7 +1,9 @@
-import React from "react";
-
 const Contact = () => {
-    return <p>Content</p>;
+    return (
+        <section className="about-container">
+            <span>Socials</span>
+        </section>
+    );
 };
 
 export default Contact;

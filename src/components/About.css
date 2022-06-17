@@ -1,8 +1,15 @@
 .about-container {
     font-family: 'Roboto', sans-serif;
-    padding-bottom: 1500px;
-    margin: 0 0 0 auto;
+    margin-bottom: 600px;
     display: flex;
+}
+.about-container > div > p > span {
+    color: #18ffff;
+}
+.about-image-container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px
 }
 .aboutH1 {
     font-weight: 900;
@@ -23,12 +30,22 @@
     line-height: 1.5rem;
     text-align: justify;
     padding-bottom: 15px;
-
 }
 .about-svg {
     width: 300px;
     min-width: 300px;
     height: auto;
-    margin-left: auto;
-    margin-right: auto;
+}
+.skills-list {
+    display: inline-flex;
+    padding-top: 20px;
+}
+.skills-list > li {
+    padding: 0 10px 0 0;
+}
+.skills-chip {
+    line-height: 1.2rem;
+}
+.skills-chip > svg {
+    fill: white;
 }

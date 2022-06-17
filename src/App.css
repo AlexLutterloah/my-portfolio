@@ -6,14 +6,17 @@
 
 .content-section {
     max-width: 1536px;
-    padding: 150px 150px 0 150px;
+    padding: 200px 150px 0 150px;
     margin: auto;
 }
-
 .content-headers {
     font-family: Roboto;
     color: #bababa;
     font-size: 2.5rem;
     font-weight: 900;
     letter-spacing: 10px;
+    padding-bottom: 100px;
+}
+.scroll {
+    scroll-margin-top: 200px;
 }
