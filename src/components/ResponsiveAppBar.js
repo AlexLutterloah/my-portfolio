@@ -9,9 +9,10 @@ import MenuIcon from "@mui/icons-material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
+import { HashLink as Link } from "react-router-hash-link";
 
-const pages = ["Home", "Projects", "Contact"];
-
+const pages = ["About", "Projects", "Contact"];
+const title = "[AL]";
 const ResponsiveAppBar = () => {
     const [anchorElNav, setAnchorElNav] = React.useState(null);
 
@@ -45,9 +46,9 @@ const ResponsiveAppBar = () => {
                             textDecoration: "none",
                         }}
                     >
-                        <span style={{ color: "white" }}>&lt;&nbsp;</span>alex
-                        lutterloah
-                        <span style={{ color: "white" }}> &nbsp;/&gt;</span>
+                        <Link to="#" smooth>
+                            {title}
+                        </Link>
                     </Typography>
 
                     <Box
@@ -85,14 +86,16 @@ const ResponsiveAppBar = () => {
                             }}
                         >
                             {pages.map((page) => (
-                                <MenuItem
-                                    key={page}
-                                    onClick={handleCloseNavMenu}
-                                >
-                                    <Typography textAlign="center">
-                                        {page}
-                                    </Typography>
-                                </MenuItem>
+                                <Link to={"#" + page.toLowerCase()} smooth>
+                                    <MenuItem
+                                        key={page}
+                                        onClick={handleCloseNavMenu}
+                                    >
+                                        <Typography textAlign="center">
+                                            {page}
+                                        </Typography>
+                                    </MenuItem>
+                                </Link>
                             ))}
                         </Menu>
                     </Box>
@@ -100,7 +103,6 @@ const ResponsiveAppBar = () => {
                         variant="h5"
                         noWrap
                         component="a"
-                        href=""
                         sx={{
                             mr: 2,
                             display: { xs: "flex", md: "none" },
@@ -112,7 +114,9 @@ const ResponsiveAppBar = () => {
                             textDecoration: "none",
                         }}
                     >
-                        alex lutterloah
+                        <Link to="#" smooth>
+                            {title}
+                        </Link>
                     </Typography>
                     <Box
                         sx={{
@@ -122,22 +126,24 @@ const ResponsiveAppBar = () => {
                         }}
                     >
                         {pages.map((page) => (
-                            <Button
-                                variant="outlined"
-                                key={page}
-                                onClick={handleCloseNavMenu}
-                                sx={{
-                                    fontFamily: "monospace",
-                                    my: 2,
-                                    ml: 2,
-                                    color: "inherit",
-                                    display: "block",
-                                    textDecoration: "none",
-                                    textTransform: "capitalize",
-                                }}
-                            >
-                                {page}
-                            </Button>
+                            <Link to={"#" + page.toLowerCase()} smooth>
+                                <Button
+                                    variant="outlined"
+                                    key={page}
+                                    onClick={handleCloseNavMenu}
+                                    sx={{
+                                        fontFamily: "monospace",
+                                        my: 2,
+                                        ml: 2,
+                                        color: "inherit",
+                                        display: "block",
+                                        textDecoration: "none",
+                                        textTransform: "capitalize",
+                                    }}
+                                >
+                                    {page}
+                                </Button>
+                            </Link>
                         ))}
                     </Box>
                 </Toolbar>

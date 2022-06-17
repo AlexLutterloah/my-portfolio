@@ -1,0 +1,34 @@
+.about-container {
+    font-family: 'Roboto', sans-serif;
+    padding-bottom: 1500px;
+    margin: 0 0 0 auto;
+    display: flex;
+}
+.aboutH1 {
+    font-weight: 900;
+    font-size: 4.5rem;
+    padding-bottom: 20px;
+}
+.aboutH2 {
+    font-family: monospace;
+    color: #18ffff;
+    padding-bottom: 20px;
+    font-size: 1rem;
+}
+.aboutP {
+    width: 525px;
+    font-size: 1rem;
+    color: #bababa;
+    font-weight: 300;
+    line-height: 1.5rem;
+    text-align: justify;
+    padding-bottom: 15px;
+
+}
+.about-svg {
+    width: 300px;
+    min-width: 300px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}

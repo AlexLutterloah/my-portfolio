@@ -1,22 +1,35 @@
-import ResponsiveAppBar from "./components/ResponsiveAppBar";
 import "./App.css";
-import ProjectItem from "./components/ProjectItem";
-import { Container } from "@mui/system";
+import About from "./components/About";
+import Contact from "./components/Contact";
+import Projects from "./components/Projects";
+import ResponsiveAppBar from "./components/ResponsiveAppBar";
+import { BrowserRouter } from "react-router-dom";
 
 function App() {
     return (
-        <div className="body-container">
-            <ResponsiveAppBar />
+        <BrowserRouter>
+            <div className="body-container">
+                <ResponsiveAppBar style={{ position: "absolute" }} />
 
-            <main className="content-section">
-                <h2>ABOUT</h2>
-                <ProjectItem />
-                <h2>PROJECTS</h2>
-                <ProjectItem />
-                <h2>CONTACT</h2>
-                <ProjectItem />
-            </main>
-        </div>
+                <main className="content-section">
+                    <span id="about"></span>
+
+                    <About></About>
+
+                    <h2 className="content-headers" id="projects">
+                        PROJECTS
+                    </h2>
+
+                    <Projects></Projects>
+
+                    <h2 className="content-headers" id="contact">
+                        CONTACT
+                    </h2>
+
+                    <Contact></Contact>
+                </main>
+            </div>
+        </BrowserRouter>
     );
 }
 

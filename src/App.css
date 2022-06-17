@@ -1,15 +1,16 @@
 .body-container {
-    background-color: #121212;
     color: white;
-    height: 100vh;
+    height: auto;
+    margin: auto;
 }
 
 .content-section {
-    max-width: 1488px;
-    padding-top: 100px;
+    max-width: 1536px;
+    padding: 150px 150px 0 150px;
     margin: auto;
 }
-main > h2 {
+
+.content-headers {
     font-family: Roboto;
     color: #bababa;
     font-size: 2.5rem;
