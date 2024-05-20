@@ -23,7 +23,7 @@ function App() {
                     <Projects></Projects>
 
                     <h2 className="content-headers scroll" id="contact">
-                        HIT MY LINE
+                        CONTACT
                     </h2>
 
                     <Contact></Contact>

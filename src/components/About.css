@@ -6,6 +6,9 @@
 .about-container > div > p > span {
     color: #18ffff;
 }
+.text-section {
+    width: 50%;
+}
 .about-image-container {
     margin-left: auto;
     margin-right: auto;
@@ -23,7 +26,6 @@
     font-size: 1rem;
 }
 .aboutP {
-    width: 525px;
     font-size: 1rem;
     color: #bababa;
     font-weight: 300;
@@ -37,11 +39,12 @@
     height: auto;
 }
 .skills-list {
-    display: inline-flex;
-    padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
 }
 .skills-list > li {
-    padding: 0 10px 0 0;
+    padding: 10px 10px 10px 0;
 }
 .skills-chip {
     line-height: 1.2rem;
