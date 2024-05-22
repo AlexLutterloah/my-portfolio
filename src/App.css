@@ -23,3 +23,17 @@
     text-align: center;
     color: #18ffff;
 }
+
+@media screen and (max-width: 1000px) {
+    .content-section {
+        padding: 150px 0 0 0;
+        min-width: 450px;
+    }
+    .body-container {
+        min-width: 480px;
+        margin: auto;
+    }
+    .content-headers {
+        padding-left: 15px;
+    }
+}

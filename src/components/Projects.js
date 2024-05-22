@@ -121,7 +121,7 @@ const Projects = () => {
           <img
             className="img-container zoom"
             src={healthdashboard_icon}
-            alt="auto scripter screenshot"
+            alt="health dashboard application screenshot"
           />
         </div>
       </div>
@@ -182,10 +182,9 @@ const Projects = () => {
             </Button>
           </div>
           <img
-            className="img-container zoom"
-            style={{ borderRadius: "40px", marginRight: "200px"}}
+            className="img-container zoom mobile-img"
             src={wealthwise_icon}
-            alt="auto scripter screenshot"
+            alt="wealthwise mobile app screenshot"
           />
         </div>
       </div>

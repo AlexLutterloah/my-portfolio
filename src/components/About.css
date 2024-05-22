@@ -35,7 +35,7 @@
 }
 .about-svg {
     width: 300px;
-    min-width: 300px;
+    min-width: 250px;
     height: auto;
 }
 .skills-list {
@@ -51,4 +51,30 @@
 }
 .skills-chip > svg {
     fill: white;
+}
+
+@media screen and (max-width: 1000px) {
+    .about-container  {
+      flex-wrap: wrap;
+      padding: 0 20px 0 20px;
+    }
+    .text-section {
+        width: 100%;
+        min-width: 450px;
+        margin: auto;
+    }
+    .aboutP {
+        width: 100%;
+        margin: auto;
+        padding-right: 0px;
+    }
+    .about-image-container {
+        min-width: 250px;
+        width: 200px;
+        margin-top: 50px; 
+        padding-top: 0;   
+    }
+    .about-svg {
+        width: 100%;
+    }
 }

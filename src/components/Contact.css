@@ -1,6 +1,6 @@
 .contact-container {
     font-family: 'Roboto', sans-serif;
-    margin-bottom: 600px;
+    margin-bottom: 200px;
     display: flex;
 }
 .contact-text {
@@ -9,4 +9,10 @@
     margin-top: -50px;
     line-height: 2rem;
     text-align: center;
+}
+
+@media screen and (max-width: 1000px) {
+    .contact-text > p {
+        width: 350px;
+    }
 }
