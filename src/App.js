@@ -22,8 +22,8 @@ function App() {
 
                     <Projects></Projects>
 
-                    <h2 className="content-headers scroll" id="contact">
-                        CONTACT
+                    <h2 className="content-headers contact scroll" id="contact">
+                        CONTACT ME
                     </h2>
 
                     <Contact></Contact>

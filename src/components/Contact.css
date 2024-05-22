@@ -1,0 +1,12 @@
+.contact-container {
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 600px;
+    display: flex;
+}
+.contact-text {
+    margin: auto;
+    color: #bababa;
+    margin-top: -50px;
+    line-height: 2rem;
+    text-align: center;
+}

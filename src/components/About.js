@@ -23,9 +23,9 @@ const About = () => {
         <p className="aboutP">
           <span>Software engineer</span> specializing in application
           development. In particular I've enjoyed building tools for utility
-          purposes that aid other processes to improve efficiency. I've also
+          purposes that aid processes to improve efficiency. I've also
           taken an interest in full-stack development as it provides a
-          comprehensive understanding of the application from start to finish.
+          comprehensive understanding of application development from start to finish.
           Building out user interfaces isn't my favorite activity, but I do find
           some enjoyment in creating intuitive and professional-looking
           interfaces.
@@ -45,6 +45,7 @@ const About = () => {
             "&::before, &::after": {
               borderColor: "#18ffff",
             },
+            paddingTop: "25px",
           }}
         >
           SKILLS
