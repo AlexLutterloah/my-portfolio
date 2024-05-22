@@ -23,9 +23,9 @@ const About = () => {
         <p className="aboutP">
           <span>Software engineer</span> specializing in application
           development. In particular I've enjoyed building tools for utility
-          purposes that aid processes to improve efficiency. I've also
-          taken an interest in full-stack development as it provides a
-          comprehensive understanding of application development from start to finish.
+          purposes that aid processes to improve efficiency. I've also taken an
+          interest in full-stack development as it provides a comprehensive
+          understanding of application development from start to finish.
           Building out user interfaces isn't my favorite activity, but I do find
           some enjoyment in creating intuitive and professional-looking
           interfaces.
@@ -136,18 +136,18 @@ const About = () => {
       </div>
       <div className="about-image-container">
         <AlexIcon className="about-svg" />
-        <a href={Resume} download="Resume" target="_blank" rel="noreferrer">
-          <Button
-            variant="outlined"
-            sx={{
-              display: "flex",
-              margin: "50px auto 0 auto",
-              color: "#18ffff",
-            }}
-          >
+        <Button
+          variant="outlined"
+          sx={{
+            display: "flex",
+            margin: "50px auto 0 auto",
+            color: "#18ffff",
+          }}
+        >
+          <a href={Resume} download="Resume" target="_blank" rel="noreferrer">
             Resume
-          </Button>
-        </a>
+          </a>
+        </Button>
       </div>
     </section>
   );

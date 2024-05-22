@@ -33,22 +33,23 @@ const Contact = () => {
         <a href="https://x.com/AlexLutterloah" target="_blank" rel="noreferrer">
           <FaXTwitter size="2rem" />
         </a>
-        <a
-          href="mailto:alexlutterloah@gmail.com"
-          rel="noreferrer"
-          target="_blank"
+        <Button
+          variant="outlined"
+          sx={{
+            display: "flex",
+            margin: "auto",
+            marginTop: "50px",
+            color: "#18ffff",
+          }}
         >
-          <Button
-            variant="outlined"
-            sx={{
-              display: "flex",
-              margin: "50px auto 0 auto",
-              color: "#18ffff",
-            }}
+          <a
+            href="mailto:alexlutterloah@gmail.com"
+            rel="noreferrer"
+            target="_blank"
           >
             Email
-          </Button>
-        </a>
+          </a>
+        </Button>
       </div>
     </section>
   );
