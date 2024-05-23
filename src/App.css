@@ -23,8 +23,7 @@
     text-align: center;
     color: #18ffff;
 }
-
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 900px) {
     .content-section {
         min-width: auto;
         padding: 150px 15px 0 15px;

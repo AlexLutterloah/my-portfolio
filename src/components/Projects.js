@@ -2,6 +2,8 @@ import "./Projects.css";
 import autoscripter_icon from "../assets/autoscripter.png";
 import healthdashboard_icon from "../assets/health_dashboard.png";
 import wealthwise_icon from "../assets/wealthwise.png";
+import healthdashboard_video from "../assets/health_dashboard_video.mp4";
+
 import { Button } from "@mui/material";
 
 const Projects = () => {
@@ -54,6 +56,7 @@ const Projects = () => {
             src={autoscripter_icon}
             alt="auto scripter screenshot"
           />
+          {/*<video src={healthdashboard_video} disableRemotePlayback loop muted autoplay />*/}
         </div>
       </div>
       <div className="project-container">

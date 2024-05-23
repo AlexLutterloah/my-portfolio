@@ -57,7 +57,10 @@
 .zoom:hover {
     transform: scale(1.1);
 }
-@media screen and (max-width: 1000px) {
+video {
+    width: 500px;
+}
+@media screen and (max-width: 900px) {
     .content-container {
         flex-wrap: wrap;
         width: auto;
@@ -73,11 +76,39 @@
         width: 80%;
         height: auto;
         margin: 50px auto auto auto;
+        max-width: 350px;
     }
     .mobile-img {
         width: 50%;
         height: auto;
         margin-right: auto;
         border-radius: 40px;
+        max-width: 170px;
+    }
+}
+@media screen and (min-width: 901px) and (max-width: 1600px) {
+    .content-container {
+        flex-wrap: wrap;
+        width: auto;
+        margin: auto;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .text-container, .project-title {
+        width: auto;
+        padding-bottom: 50px;
+    }
+    .img-container {
+        width: 25%;
+        height: auto;
+        margin-top: 50px;
+        min-width: 420px;
+    }
+    .mobile-img {
+        width: 20%;
+        min-width: 248px;
+        height: auto;
+        border-radius: 40px;
+        margin: 0
     }
 }
