@@ -35,9 +35,7 @@ function App() {
                             paddingBottom: "20px",
                         }}
                     >
-                        Developed by <span style={{ color: "#18ffff" }}>A</span>
-                        lex <span style={{ color: "#18ffff" }}>L</span>
-                        utterloah.
+                        Developed by <span style={{ color: "#18ffff" }}>Alex Lutterloah</span>
                     </span>
                 </footer>
             </div>

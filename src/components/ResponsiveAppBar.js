@@ -82,7 +82,7 @@ const ResponsiveAppBar = () => {
                             open={Boolean(anchorElNav)}
                             onClose={handleCloseNavMenu}
                             sx={{
-                                display: { xs: "block", md: "none" },
+                                display: { xs: "block", md: "none" }
                             }}
                         >
                             {pages.map((page) => (
@@ -90,8 +90,9 @@ const ResponsiveAppBar = () => {
                                     <MenuItem
                                         key={page}
                                         onClick={handleCloseNavMenu}
+                                        /*sx={{color: "#18ffff", backgroundColor: "rgba(29, 29, 29, 0.705)"}}*/
                                     >
-                                        <Typography textAlign="center">
+                                        <Typography textAlign="center" >
                                             {page}
                                         </Typography>
                                     </MenuItem>

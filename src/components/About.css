@@ -52,15 +52,15 @@
 .skills-chip > svg {
     fill: white;
 }
-
 @media screen and (max-width: 1000px) {
     .about-container  {
       flex-wrap: wrap;
       padding: 0 20px 0 20px;
+      margin-bottom: 200px;
     }
     .text-section {
         width: 100%;
-        min-width: 450px;
+        min-width: 400px;
         margin: auto;
     }
     .aboutP {
