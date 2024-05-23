@@ -35,7 +35,6 @@
 }
 .about-svg {
     width: 300px;
-    min-width: 250px;
     height: auto;
 }
 .skills-list {
@@ -55,26 +54,24 @@
 @media screen and (max-width: 1000px) {
     .about-container  {
       flex-wrap: wrap;
-      padding: 0 20px 0 20px;
       margin-bottom: 200px;
     }
     .text-section {
-        width: 100%;
-        min-width: 400px;
+        width: auto;
         margin: auto;
     }
     .aboutP {
-        width: 100%;
+        width: auto;
         margin: auto;
-        padding-right: 0px;
     }
     .about-image-container {
-        min-width: 250px;
-        width: 200px;
-        margin-top: 50px; 
-        padding-top: 0;   
+        width: 75%;
+        margin-top: 50px;
     }
     .about-svg {
         width: 100%;
+    }
+    .aboutH1 {
+        font-size: 4rem;
     }
 }

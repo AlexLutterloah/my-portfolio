@@ -26,17 +26,11 @@
 
 @media screen and (max-width: 1000px) {
     .content-section {
-        padding: 150px 0 0 0;
-        min-width: 400px;
+        min-width: auto;
+        padding: 150px 15px 0 15px;
     }
     .body-container {
-        min-width: 420px;
+        min-width: auto;
         margin: auto;
     }
-    .content-headers {
-        padding-left: 15px;
-    }
-}
-.MuiList-root {
-    background-color: "green";
 }

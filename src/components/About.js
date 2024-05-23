@@ -21,14 +21,13 @@ const About = () => {
         <h2 className="aboutH2">Hello, my name is</h2>
         <h1 className="aboutH1">Alex Lutterloah.</h1>
         <p className="aboutP">
-          <span>Software engineer</span> specializing in application
-          development. In particular I've enjoyed building tools for utility
-          purposes that aid processes to improve efficiency. I've also taken an
-          interest in full-stack development as it provides a comprehensive
-          understanding of application development from start to finish.
-          Building out user interfaces isn't my favorite activity, but I do find
-          some enjoyment in creating intuitive and professional-looking
-          interfaces.
+          <span>Software engineer</span> specializing in full-stack development.
+          I also have an interest in developing utility-based applications to assist or
+          automate meticulous processes. I particularly enjoy full-stack development 
+          as it provides a comprehensive understanding of
+          application development from start to finish. Building out user
+          interfaces isn't my favorite activity, but I do find satisfaction in
+          creating intuitive and clean UI designs.
           <br />
           <br />I currently live in Richmond, Virginia and recently graduated
           from <span>Virginia Commonwealth University</span> with a Bachelor's

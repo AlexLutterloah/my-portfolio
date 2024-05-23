@@ -60,28 +60,22 @@
 @media screen and (max-width: 1000px) {
     .content-container {
         flex-wrap: wrap;
-        min-width: 400px;
-        width: 100%;
+        width: auto;
         margin: auto;
+        padding-left: 0;
+        padding-right: 0;
     }
     .text-container, .project-title {
-        width: 100%;
-        min-width: 400px;
+        width: auto;
         margin: auto;
-        padding-right: 15px;
-    }
-    .project-title {
-        padding-left: 15px;
     }
     .img-container {
-        min-width: 400px;
-        width: 250px;
+        width: 80%;
         height: auto;
         margin: 50px auto auto auto;
     }
     .mobile-img {
-        min-width: 150px;
-        width: 200px;
+        width: 50%;
         height: auto;
         margin-right: auto;
         border-radius: 40px;
