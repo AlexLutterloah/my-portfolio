@@ -1,67 +1,32 @@
 import "./Projects.css";
+import { useState } from "react";
+import { Button } from "@mui/material";
+import VideoPlayer from "./VideoPlayer.js";
+
+/* Project Images */
 import autoscripter_icon from "../assets/autoscripter.png";
 import healthdashboard_icon from "../assets/health_dashboard.png";
 import wealthwise_icon from "../assets/wealthwise.png";
-/*import healthdashboard_video from "../assets/health_dashboard_video.mp4";*/
 
-import { Button } from "@mui/material";
+/* Project Videos */
+import healthdashboard_video from "../assets/health_dashboard_video.mp4";
+import autoscripter_video from "../assets/autoscripter_video.mp4";
+import wealthwise_video from "../assets/wealthwise_video.mp4";
 
 const Projects = () => {
+  const [showPlayer, setShowPlayer] = useState(false);
+  const [selectedPlayer, setSelectedPlayer] = useState("");
+
+  function handleImageClick(selection) {
+    setShowPlayer(true);
+    setSelectedPlayer(selection);
+  }
   return (
     <section className="projects">
       <div className="project-container">
-        <h2 className="project-title">Auto Scripter</h2>
-        <div className="content-container content-hover">
-          <div className="text-container">
-            <p>
-              This is a multi-facted tool that I created to improve efficiency
-              in meticulous tasks related to updating a SQL database for
-              work-related purposes.
-            </p>
-            <h3 className="text-headers">FEATURES</h3>
-            <ul>
-              <li>
-                Builds SQL configuration file based on file titles and user
-                input
-              </li>
-              <li>Create new field configurations via simple UI</li>
-              <li>Drag and drop files, or select to browse</li>
-              <li>Auto-complete text inputs for new fields</li>
-              <li>
-                Provides and reads Excel template data to return SQL
-                configuration
-              </li>
-            </ul>
-            <h3 className="text-headers">TOOLS</h3>
-            <p>
-              I utilized the .NET framework to create this windows form
-              application since it has the ability to easily create user
-              interfaces, and was capable of the basic functionality I was
-              looking for.
-            </p>
-            <h3 className="text-headers">EXPERIENCE GAINED</h3>
-            <ul>
-              <li>.NET Framework / C# / WinForms</li>
-              <li>Text Parsing & Regular Expression</li>
-              <li>Reading and writing to Excel/CSV files in C#</li>
-              <li>Intercepting windows events in C# (form controls)</li>
-            </ul>
-            <p>
-              <br />
-              Code walk-through available upon request.
-            </p>
-          </div>
-          <img
-            className="img-container zoom"
-            src={autoscripter_icon}
-            alt="auto scripter screenshot"
-          />
-          {/*<video src={healthdashboard_video} disableRemotePlayback loop muted autoplay />*/}
-        </div>
-      </div>
-      <div className="project-container">
         <h2 className="project-title">Health Dashboard</h2>
         <div className="content-container content-hover">
+
           <div className="text-container">
             <p>
               Full-stack web application built for Capital One as a part of the
@@ -125,7 +90,60 @@ const Projects = () => {
             className="img-container zoom"
             src={healthdashboard_icon}
             alt="health dashboard application screenshot"
+            onClick={() => handleImageClick("healthdashboard")}
           />
+          {showPlayer && selectedPlayer === "healthdashboard" && <VideoPlayer source={healthdashboard_video} onClose={() => setShowPlayer(false)} />}
+        </div>
+      </div>
+      <div className="project-container">
+        <h2 className="project-title">Auto Scripter</h2>
+        <div className="content-container content-hover">
+          <div className="text-container">
+            <p>
+              This is a multi-facted tool that I created to improve efficiency
+              in meticulous tasks related to updating a SQL database for
+              work-related purposes.
+            </p>
+            <h3 className="text-headers">FEATURES</h3>
+            <ul>
+              <li>
+                Builds SQL configuration file based on file titles and user
+                input
+              </li>
+              <li>Create new field configurations via simple UI</li>
+              <li>Drag and drop files, or select to browse</li>
+              <li>Auto-complete text inputs for new fields</li>
+              <li>
+                Provides and reads Excel template data to return SQL
+                configuration
+              </li>
+            </ul>
+            <h3 className="text-headers">TOOLS</h3>
+            <p>
+              I utilized the .NET framework to create this windows form
+              application since it has the ability to easily create user
+              interfaces, and was capable of the basic functionality I was
+              looking for.
+            </p>
+            <h3 className="text-headers">EXPERIENCE GAINED</h3>
+            <ul>
+              <li>.NET Framework / C# / WinForms</li>
+              <li>Text Parsing & Regular Expression</li>
+              <li>Reading and writing to Excel/CSV files in C#</li>
+              <li>Intercepting windows events in C# (form controls)</li>
+            </ul>
+            <p>
+              <br />
+              Code walk-through available upon request.
+            </p>
+          </div>
+          <img
+            className="img-container zoom"
+            src={autoscripter_icon}
+            alt="auto scripter screenshot"
+            onClick={() => handleImageClick("autoscripter")}
+          />
+          {showPlayer && selectedPlayer === "autoscripter" && <VideoPlayer source={autoscripter_video} onClose={() => setShowPlayer(false)} />}
         </div>
       </div>
       <div className="project-container">
@@ -188,7 +206,9 @@ const Projects = () => {
             className="img-container zoom mobile-img"
             src={wealthwise_icon}
             alt="wealthwise mobile app screenshot"
+            onClick={() => handleImageClick("wealthwise")}
           />
+          {showPlayer && selectedPlayer === "wealthwise" && <VideoPlayer source={wealthwise_video} onClose={() => setShowPlayer(false)} />}
         </div>
       </div>
     </section>

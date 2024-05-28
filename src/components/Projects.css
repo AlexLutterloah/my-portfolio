@@ -55,11 +55,29 @@
     padding: 15px 0 15px 0;
 }
 .zoom:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
+
+/* STYLING FOR VIDEO PLAYER */
+.video-container {
+    display: flex;
+    position: fixed;
+    top: 25%;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(2px);
+    z-index: 10;
+}
+
 video {
-    width: 500px;
+    width: 70%;
+    min-width: 300px;
+    margin: auto;
+    border: 4pt #18ffff solid;
+    border-radius: 10px;
 }
+
+/* MOBILE STYLING */
 @media screen and (max-width: 900px) {
     .content-container {
         flex-wrap: wrap;
@@ -86,6 +104,8 @@ video {
         max-width: 170px;
     }
 }
+
+/* TABLET/INTERMEDIATE RANGE RESPONSIVE STYLING */
 @media screen and (min-width: 901px) and (max-width: 1600px) {
     .content-container {
         flex-wrap: wrap;
